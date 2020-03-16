@@ -1,0 +1,15 @@
+
+<a href="{% url 'home' %}">Back Homepage</a>
+
+<h4>Your Text:</h4>
+{{ usertext }}
+<br>
+Total words:{{ count }}
+<br>
+{% for word, countotal in word_num %}
+{{ word }}-{{ countotal }}
+<br>
+
+{% endfor %}
+
+
